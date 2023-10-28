@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    list-style: none;
+    text-decoration: none;
+    cursor: default;
+}
+
+:root{
+    --color-uno: #0a0908;
+    --color-dos: #5e503f;
+    --color-tres: #C6AC8F;
+    --color-cuatro: #22333B;
+    --color-cinco: #EAE0D5;
+
+    --font-uno: 'Rye', serif;
+    --font-dos: 'Dosis', sans-serif;
+}
+
+
+body{
+    background-color: var(--color-cinco);
+}
+
+/* HEADER  */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    background-color: var(--color-tres);
+    font-size: 1.3rem;
+}
+
+.titulo{
+    color: var(--color-cinco);
+    font-family: var(--font-uno);
+    text-shadow: 1px 1px 1px #000;
+}
+
+.carrito{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* MAIN  */
+
+/* NAVEGACION  */
+.contenedor-lista{
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.nav-lista{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-family: var(--font-dos)
+}
+
+.item-lista{
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.item-lista > a{
+    color: var(--color-cinco);
+    padding: 0.2rem 0.3rem;
+    border: 2px solid var(--color-cuatro);
+    background-color: var(--color-dos);
+    border-radius: 10px;
+}
+
+.item-lista:hover{
+    border-bottom: 3px solid var(--color-dos);
+    cursor: pointer;
+}
+/* PRODUCTOS  */
+
+#contenedor-carrito{
+    padding: 1rem;
+}
+.producto{
+    border-bottom: 3px solid var(--color-cuatro);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.productos-en-carrito{
+    border-bottom: 2px solid var(--color-cuatro);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.contenedor-div{
+    border: 2px solid red;
+}
+/* FOOTER */
+
+footer{
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
